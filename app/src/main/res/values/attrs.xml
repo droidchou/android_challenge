@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
+    
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference"/>
+        <attr name="metaButtonBarButtonStyle" format="reference"/>
+    </declare-styleable>
+    
+    <declare-styleable name="AccumulatorProgressBar">
+        <attr name="spentColor" format="color"/>
+        <attr name="unspentColor" format="color"/>
+        <attr name="familySpentColor" format="color"/>
+        <attr name="progressBarHeight" format="dimension"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ChangeLocationView">
+        <attr name="siteSection" format="string"/>
+        <attr name="actionTag" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="EditTextComponent" parent="EditText">
+        <attr name="hint" format="string"/>
+        <attr name="text" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ArticleCarousel">
+        <attr name="ArticleCarouselHeader" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="CurrencyEditText">
+        <attr name="allow_negative_values" format="boolean"/>
+        <attr name="decimal_digits" format="integer"/>
+    </declare-styleable>
+    
+    <declare-styleable name="RoundedRectangleView">
+        <attr name="RoundedRectangleViewRadius" format="integer"/>
+    </declare-styleable>
+    
+    <declare-styleable name="AnatomyCircleImageButton">
+        <attr name="icon" format="reference"/>
+        <attr name="anatomyCircleImageButtonBackgroundColor" format="enum">
+            <enum name="white" value="0"/>
+            <enum name="gray" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

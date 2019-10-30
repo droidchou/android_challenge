@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="base_padding">16dp</dimen>
+    <dimen name="alt_margin">24dp</dimen>
+    <dimen name="base_margin">16dp</dimen>
+    <dimen name="half_base_margin">8dp</dimen>
+    <dimen name="half_base_padding">8dp</dimen>
+    <dimen name="quarter_base_padding">4dp</dimen>
+    <dimen name="double_base_margin">32dp</dimen>
+    <dimen name="quadruple_base_margin">64dp</dimen>
+    <dimen name="base_12_dp">12dp</dimen>
+    <dimen name="space_between_buttons">8dp</dimen>
+    <dimen name="quarter_base_margin">4dp</dimen>
+    <dimen name="base_padding_page_top_no_toolbar">48dp</dimen>
+    <dimen name="base_padding_page_top">@dimen/alt_margin</dimen>
+    <dimen name="base_padding_page_bottom">@dimen/double_base_margin</dimen>
+    <dimen name="button_minwidth">88dp</dimen>
+    <dimen name="chip_margin_horizontal">8dp</dimen>
+    <dimen name="chip_margin_vertical">6dp</dimen>
+    
+    <!--Universal Card Dimens-->
+    <dimen name="card_horizontal_padding">16dp</dimen>
+    <dimen name="card_vertical_padding">16dp</dimen>
+    <dimen name="card_horizontal_margin">16dp</dimen>
+    <dimen name="card_vertical_margin">16dp</dimen>
+    
+    <dimen name="card_horizontal_half_padding">8dp</dimen>
+    <dimen name="card_vertical_half_padding">8dp</dimen>
+    <dimen name="card_horizontal_half_margin">8dp</dimen>
+    <dimen name="card_vertical_half_margin">8dp</dimen>
+    
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="two_line_item_vertical_padding">10dp</dimen>
+    
+    <!--Universal Activity dimens-->
+    <dimen name="activity_vertical_padding">22dp</dimen>
+    <dimen name="activity_vertical_margin">22dp</dimen>
+    
+    <dimen name="bottom_nav_bar_margin">56dp</dimen>
+    
+    <!--Other Universal Dimens-->
+    <dimen name="button_elevation">8dp</dimen>
+    <dimen name="article_carousel_height">180dp</dimen>
+
+    <!-- Provider List View Refine Results -->
+    <dimen name="scroll_list_section_vertical_spacing">32dp</dimen>
+    
+    <!-- Provider Detail View -->
+    <dimen name="pricing_description_min_height">36dp</dimen>
+    <dimen name="select_location_icon_size">24dp</dimen>
+    <dimen name="med_group_icon_size">24dp</dimen>
+    
+    <!-- Typeahead -->
+    <dimen name="typeahead_quick_search_card_image_size">52dp</dimen>
+    <dimen name="typeahead_quick_search_card_image_margin">32dp</dimen>
+    <dimen name="typeahead_quick_search_location_icon_size">24dp</dimen>
+    <dimen name="typeahead_recents_icon_size">32dp</dimen>
+    <dimen name="typeahead_recents_foreground_icon_size">20dp</dimen>
+    <dimen name="typeahead_recents_icon_margin">24dp</dimen>
+    
+    <!-- Onsite Clinic -->
+    <dimen name="onsite_clinic_icon_background_size">40dp</dimen>
+    
+    <!-- circleProgressStuff -->
+    <dimen name="condition_details_subtitle_font_size">15sp</dimen>
+    
+    <!-- Digital Coaching -->
+    <dimen name="digital_coaching_daily_item_header_margin">24dp</dimen>
+    <dimen name="digital_coaching_header_margin">24dp</dimen>
+    <dimen name="digital_coaching_complete_image_margin">40dp</dimen>
+    <dimen name="digital_coaching_program_margin">24dp</dimen>
+    
+    <!-- detail disclaimer dimens -->
+    <dimen name="disclaimer_link_vertical_spacing">6dp</dimen>
+    <dimen name="disclaimer_vertical_spacing">24dp</dimen>
+
+    <!-- Tip Cards -->
+    <dimen name="view_tip_card_width">248dp</dimen>
+    <dimen name="view_tip_card_height">240dp</dimen>
+
+    <!--Drawer Values-->
+    <dimen name="drawer_end_margin">56dp</dimen>
+
+    <!-- Welcome Cards -->
+    <dimen name="view_welcome_card_width">344dp</dimen>
+    <dimen name="view_welcome_card_height">240dp</dimen>
+    <dimen name="view_welcome_card_width_padded">348dp</dimen>
+    <dimen name="view_welcome_card_height_padded">244dp</dimen>
+
+    <!--Grid Spacing-->
+    <dimen name="grid_horizontal_spacing">8dp</dimen>
+    <dimen name="grid_vertical_spacing">8dp</dimen>
+    <dimen name="grid_horizontal_spacing_half">4dp</dimen>
+    <dimen name="grid_vertical_spacing_half">4dp</dimen>
+
+    <!--Records-->
+    <dimen name="records_list_scroll_offset">-8dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="records_timeline_bottom_margin">16dp</dimen>
+    <dimen name="records_timeline_bottom_margin_half">8dp</dimen>
+
+    <!--DocAsap-->
+    <dimen name="docasap_landing_practitioner_image">40dp</dimen>
+    <dimen name="docasap_address_form_top_margin">40dp</dimen>
+
+    <!--Payments-->
+    <dimen name="payments_medium_margin">24dp</dimen>
+    <dimen name="payments_small_margin_bottom">3dp</dimen>
+    <dimen name="payments_large_margin">48dp</dimen>
+    
+    <!--Claims-->
+    <dimen name="claims_section_loader_size">24dp</dimen>
+    
+    <!--NBA Templates-->
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    
+    <!--Timeline Component-->
+    <dimen name="timeline_header_margin">24dp</dimen>
+    <dimen name="alert_title_margin_20">20dp</dimen>
+    <dimen name="dc_timeline_icon_size">26dp</dimen>
+    
+    <!--Medication Details-->
+    <dimen name="link_spacing_margin">28dp</dimen>
+    <dimen name="pharmacy_card_padding">24dp</dimen>
+    <dimen name="error_icon_size">20dp</dimen>
+    
+    <!--PLV Avatar Images-->
+    <dimen name="plv_avatar_dimen">40dp</dimen>
+    
+    <!--Contact Us-->
+    <dimen name="contact_us_address_line_spacing">5sp</dimen>
+    
+</resources>

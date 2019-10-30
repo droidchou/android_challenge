@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Anatomy.Text.Headline" parent="Base.Aetna">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/Anatomy_black</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    
+    <style name="Anatomy.Text.Headline.Teal" parent="Anatomy.Text.Headline">
+        <item name="android:textColor">@color/Anatomy_teal_deep</item>
+    </style>
+
+    <style name="Anatomy.Text.Title" parent="Base.Aetna">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/Anatomy_black</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Anatomy.Text.Title.White" parent="Anatomy.Text.Title">
+        <item name="android:textColor">@color/Anatomy_white</item>
+    </style>
+
+    <style name="Anatomy.Text.Subtitle1" parent="Base.Aetna">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/Anatomy_black</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Anatomy.Text.Subtitle1.Deemphasized" parent="Anatomy.Text.Subtitle1">
+        <item name="android:textColor">@color/Anatomy_black_60_percent</item>
+    </style>
+
+    <style name="Anatomy.Text.Subtitle1.Disabled" parent="Anatomy.Text.Subtitle1">
+        <item name="android:textColor">@color/Anatomy_black_38_percent</item>
+    </style>
+
+    <style name="Anatomy.Text.Subtitle2" parent="Base.Aetna">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/Anatomy_black</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <style name="Anatomy.Text.Subtitle2.Deemphasized" parent="Anatomy.Text.Subtitle2">
+        <item name="android:textColor">@color/Anatomy_black_60_percent</item>
+    </style>
+    
+    <style name="Anatomy.Text.Subtitle2.White" parent="Anatomy.Text.Subtitle2">
+        <item name="android:textColor">@color/Anatomy_white</item>
+    </style>
+    
+    <style name="Anatomy.Text.Subtitle2.Accent" parent="Anatomy.Text.Subtitle2">
+        <item name="android:textColor">@color/Anatomy_teal_deep</item>
+    </style>
+    
+    <style name="Anatomy.Text.Body_2" parent="Base.Aetna">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/Anatomy_black</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    
+    <style name="Anatomy.Text.Body_2.White" parent="Anatomy.Text.Body_2">
+        <item name="android:textColor">@color/Anatomy_white</item>
+    </style>
+    
+    <style name="Anatomy.Text.Body_2.Link" parent="Anatomy.Text.Body_2">
+        <item name="android:textColor">@color/Anatomy_teal_deep</item>
+    </style>
+    
+    <style name="Anatomy.Text.Body_2.Deemphasized" parent="Anatomy.Text.Body_2">
+        <item name="android:textColor">@color/Anatomy_black_60_percent</item>
+    </style>
+
+    <style name="Anatomy.Text.Body_1" parent="Anatomy.Text.Body_2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/Anatomy_black</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <style name="Anatomy.Text.Body_1.Red" parent="Anatomy.Text.Body_1">
+        <item name="android:textColor">@color/Anatomy_error</item>
+    </style>
+
+    <style name="Anatomy.Text.Caption" parent="Base.Aetna">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/Anatomy_black</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    
+    <style name="Anatomy.Text.Caption.GreyShade" parent="Anatomy.Text.Caption">
+        <item name="android:textColor">@color/Anatomy_gray_shade</item>
+    </style>
+
+    <style name="Anatomy.Text.Caption.Emphasized" parent="Anatomy.Text.Caption">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Anatomy.Text.Caption.Deemphasized" parent="Anatomy.Text.Caption">
+        <item name="android:textColor">@color/Anatomy_black_60_percent</item>
+    </style>
+
+    <style name="Anatomy.Text.Caption.Disabled" parent="Anatomy.Text.Caption">
+        <item name="android:textColor">@color/Anatomy_black_38_percent</item>
+    </style>
+
+    <style name="Anatomy.Text.Caption_2" parent="Anatomy.Text.Caption">
+        <item name="android:textSize">10sp</item>
+    </style>
+    
+    <!--Most buttons should use styles from anatomy_button_styles. These Anatomy.Text.Button styles below should-->
+    <!--only be used for a card that has only one action, and when you click the card anywhere it does that one action-->
+    <style name="Anatomy.Text.Button.Flat" parent="Base.Aetna">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/Anatomy_teal_deep</item>
+    </style>
+
+    <style name="Anatomy.Text.Button.Contained" parent="Anatomy.Text.Button.Flat">
+        <item name="android:textColor">@color/Anatomy_white</item>
+    </style>
+
+
+    <style name="Anatomy.Button" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/base_padding</item>
+        <item name="android:paddingEnd">@dimen/base_padding</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textAppearance">@style/Anatomy.Text.Button.Contained</item>
+        <item name="android:textColor">@color/Anatomy_white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:backgroundTint">@color/Anatomy_teal_deep</item>
+        <item name="android:elevation">@dimen/button_elevation</item>
+        <item name="android:minWidth">@dimen/button_minwidth</item>
+    </style>
+
+    <!--    please use : half_base_margin -->
+    <style name="Anatomy.HorizontalRule" parent="Base.Aetna">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:background">@color/Anatomy_black_12_percent</item>
+    </style>
+
+</resources>

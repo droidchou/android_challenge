@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SimpleMailOrder</string>
+
+    <!--  Prescription -->
+    <string name="prescription_member">"Member: "</string>
+    <string name="prescription_remaining">"Remaining Refills: "</string>
+    <string name="prescription_prescribed">"Prescribed by: "</string>
+    <string name="prescription_filled_by">"Filled by: "</string>
+    <string name="prescription_days_supply">%s-day supply</string>
+
+</resources>

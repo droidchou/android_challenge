@@ -1,0 +1,49 @@
+<resources>
+    
+    <!-- This file hold base/root styles applicable to app wide configurations only -->
+    <style name="Base.RootStyle" parent="Theme.MaterialComponents.DayNight.Bridge"/>
+    
+    <style name="Base.RootStyle.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge"/>
+    
+    <style name="NoActionBarAppCompatTheme" parent="Base.RootStyle.NoActionBar">
+        <item name="colorPrimary">@color/aetna_accent</item>
+        <item name="colorPrimaryDark">@color/aetna_primary_dark</item>
+        <item name="colorAccent">@color/aetna_accent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="elevation">0dp</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+
+    <style name="Base.Aetna" parent="Base.RootStyle.NoActionBar">
+        <item name="colorPrimary">@color/aetna_primary</item>
+        <item name="colorPrimaryDark">@color/aetna_primary_dark</item>
+        <item name="colorAccent">@color/aetna_accent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@color/page_background</item>
+        <item name="android:textColorPrimary">@color/Anatomy_black</item>
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="actionModeBackground">@color/Anatomy_gray_shade</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionBarPopupTheme">@style/Base.Aetna.OverflowMenu</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>
+    </style>
+    
+    <style name="Base.Aetna.OverflowMenu">
+        <item name="android:colorBackground">@color/Anatomy_white</item>
+        <item name="android:textColor">@color/Anatomy_black</item>
+    </style>
+    
+    <style name="Base.RootStyle.Widget.Spinner" parent="Widget.AppCompat.Spinner.Underlined"/>
+
+
+    <style name="FullscreenActionBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@color/Anatomy_white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Anatomy reference colors -->
+
+    <color name="aetna_primary">@color/Anatomy_violet</color>
+    <color name="aetna_primary_dark">@color/Anatomy_black</color>
+    <color name="aetna_accent">@color/Anatomy_teal_deep</color>
+
+    <color name="page_background">@color/Anatomy_background</color>
+    <color name="ic_launcher_background">@color/Anatomy_violet</color>
+    <color name="switch_off_color">@color/Anatomy_gray_tint</color>
+</resources>

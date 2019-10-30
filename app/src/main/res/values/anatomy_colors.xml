@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Anatomy_violet">#ff7d3f98</color>
+    <color name="Anatomy_violet_12_percent">#1F7d3f98</color>
+    <color name="Anatomy_violet_shade">#ff563d82</color>
+
+    <color name="Anatomy_teal_deep">#ff007D82</color>
+
+    <color name="Anatomy_cranberry">#ffd20962</color>
+
+    <color name="Anatomy_black">#de000000</color>
+    <color name="Anatomy_black_60_percent">#99000000</color>
+    <color name="Anatomy_black_38_percent">#61000000</color>
+    <color name="Anatomy_black_12_percent">#1f000000</color>
+    
+    <color name="Anatomy_gray_tint">#ff98abb4</color>
+    <color name="Anatomy_gray_tint_10_percent">#1A98abb4</color>
+    <color name="Anatomy_gray">#ff607d8b</color>
+    <color name="Anatomy_gray_24_percent">#3D607d8b</color>
+    <color name="Anatomy_gray_shade">#ff455a64</color>
+    
+    <color name="Anatomy_avatar">#ffeef2f4</color>
+
+    <color name="Anatomy_background">#fff6f8f9</color>
+
+    <color name="Anatomy_white">#ffffffff</color>
+    <color name="Anatomy_white_74_percent">#bdffffff</color>
+
+    <color name="Anatomy_warning">#ffffc107</color>
+    <color name="Anatomy_error">#ffd53220</color>
+    <color name="Anatomy_success">#ff118437</color>
+    <color name="Anatomy_info">#ff116edf</color>
+
+</resources>
