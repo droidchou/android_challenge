@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             tools:text="Last filled ABC" />
-        <!-- use style : Anatomy.Text.Title -->
+        <!-- use style : Anatomy.Text.Title and color Anatomy_teal_deep -->
         <TextView
             android:id="@+id/prescriptions_drug_name"
             android:layout_marginTop="8dp"
@@ -89,7 +89,7 @@
 
         <View style="@style/Anatomy.HorizontalRule"/>
 
-        <!-- use style : Anatomy.Button, color : Anatomy_teal_deep , string : prescription_add_to_cart -->
+        <!-- use style : Anatomy.Button, color : Anatomy_white , string : prescription_add_to_cart -->
         <Button
             android:id="@+id/prescriptions_add_to_cart"
             android:layout_width="wrap_content"
