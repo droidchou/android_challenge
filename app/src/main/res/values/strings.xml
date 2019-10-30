@@ -7,5 +7,6 @@
     <string name="prescription_prescribed">"Prescribed by: "</string>
     <string name="prescription_filled_by">"Filled by: "</string>
     <string name="prescription_days_supply">%s-day supply</string>
+    <string name="prescription_add_to_cart">AddToCart</string>
 
 </resources>

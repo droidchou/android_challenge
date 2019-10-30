@@ -136,7 +136,7 @@
         <item name="android:paddingTop">10dp</item>
         <item name="android:paddingBottom">10dp</item>
         <item name="android:textAppearance">@style/Anatomy.Text.Button.Contained</item>
-        <item name="android:textColor">@color/Anatomy_white</item>
+        <item name="android:textColor">@color/Anatomy_warning</item>
         <item name="android:textAlignment">center</item>
         <item name="android:backgroundTint">@color/Anatomy_teal_deep</item>
         <item name="android:elevation">@dimen/button_elevation</item>
@@ -147,8 +147,6 @@
     <style name="Anatomy.HorizontalRule" parent="Base.Aetna">
         <item name="android:layout_height">1dp</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_marginLeft">8dp</item>
-        <item name="android:layout_marginRight">8dp</item>
         <item name="android:background">@color/Anatomy_black_12_percent</item>
     </style>
 

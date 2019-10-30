@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Base.Aetna">
-        <!--MainActivity-->
-        <activity android:name=".PrescriptionActivity">
+        <activity android:name=".BaseAppCompatActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

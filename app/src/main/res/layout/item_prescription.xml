@@ -1,122 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/prescriptions_refill_card"
     android:background="@color/Anatomy_white"
-    android:layout_marginBottom="@dimen/base_margin"
+    android:layout_marginBottom="16dp"
     android:layout_marginStart="@dimen/base_margin"
     android:layout_marginEnd="@dimen/base_margin"
     android:focusable="true"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-<!--    remove  dimension , use color , use style , use string resource -->
+<!--    use dimension to replace dp , use color , use style , use string resource -->
     
     <LinearLayout
         android:id="@+id/prescriptions_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingTop="@dimen/base_padding">
-        
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+        <!-- use style : Anatomy.Text.Caption.Deemphasized -->
         <TextView
             android:id="@+id/prescriptions_last_fill"
-            style="@style/Anatomy.Text.Caption.Deemphasized"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/base_padding"
-            android:paddingEnd="@dimen/base_padding"
             android:ellipsize="end"
             tools:text="Last filled ABC" />
-        
+        <!-- use style : Anatomy.Text.Title -->
         <TextView
             android:id="@+id/prescriptions_drug_name"
-            style="@style/Anatomy.Text.Title"
-            android:layout_marginTop="@dimen/half_base_margin"
+            android:layout_marginTop="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/base_padding"
-            android:paddingEnd="@dimen/base_padding"
-            android:textColor="@color/Anatomy_teal_deep"
             tools:text="Xanax 30mg Tab ABC" />
-        
+
+        <!-- use style : Anatomy.Text.Caption.Deemphasized -->
         <TextView
             android:id="@+id/prescriptions_days_supply"
-            style="@style/Anatomy.Text.Caption.Deemphasized"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/base_padding"
-            android:paddingEnd="@dimen/base_padding"
             android:ellipsize="end"
             tools:text="30-day supply ABC" />
-        
+
+        <!-- use style : Anatomy.Text.Body_2.Deemphasized -->
         <TextView
             android:id="@+id/prescriptions_member_name"
-            style="@style/Anatomy.Text.Body_2.Deemphasized"
-            android:layout_marginTop="@dimen/half_base_margin"
+            android:layout_marginTop="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/base_padding"
-            android:paddingEnd="@dimen/base_padding"
             android:ellipsize="end"
             tools:text="Member: ABCDE" />
-        
+        <!-- use style : Anatomy.Text.Body_2.Deemphasized -->
         <TextView
             android:id="@+id/prescriptions_remaining"
-            style="@style/Anatomy.Text.Body_2.Deemphasized"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/base_padding"
-            android:paddingEnd="@dimen/base_padding"
             android:ellipsize="end"
             tools:text="Remaining refills: ABC" />
-        
+
+        <!-- use style : Anatomy.Text.Body_2.Deemphasized -->
         <TextView
             android:id="@+id/prescriptions_prescribed"
-            style="@style/Anatomy.Text.Body_2.Deemphasized"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/base_padding"
-            android:paddingEnd="@dimen/base_padding"
             android:ellipsize="end"
             tools:text="Prescribed by: ABC" />
-        
+
+        <!-- use style : Anatomy.Text.Body_2.Deemphasized -->
         <TextView
             android:id="@+id/prescriptions_filled_by"
-            style="@style/Anatomy.Text.Body_2.Deemphasized"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/base_padding"
-            android:paddingEnd="@dimen/base_padding"
-            android:layout_marginBottom="@dimen/half_base_margin"
+            android:layout_marginBottom="8dp"
             android:ellipsize="end"
             tools:text="Filled by: ABC" />
-        
+
+        <!-- use style : Anatomy.Text.Body_1 -->
         <TextView
             android:id="@+id/prescriptions_price"
-            style="@style/Anatomy.Text.Body_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/base_padding"
-            android:paddingEnd="@dimen/base_padding"
-            android:layout_marginBottom="@dimen/half_base_margin"
+            android:layout_marginBottom="8dp"
             android:textSize="18sp"
             android:ellipsize="end"
             tools:text="$333.44" />
 
         <View style="@style/Anatomy.HorizontalRule"/>
-        
+
+        <!-- use style : Anatomy.Button, color : Anatomy_teal_deep , string : prescription_add_to_cart -->
         <Button
             android:id="@+id/prescriptions_add_to_cart"
-            style="@style/Anatomy.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AddToCart"
-            android:layout_margin="@dimen/half_base_margin"
-            android:importantForAccessibility="yes" />
-
+            android:layout_margin="8dp" />
     
     </LinearLayout>
 
