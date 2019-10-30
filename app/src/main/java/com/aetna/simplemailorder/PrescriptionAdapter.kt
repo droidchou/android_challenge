@@ -4,12 +4,14 @@ import android.text.SpannableStringBuilder
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import androidx.core.content.ContextCompat.getColor
 import androidx.core.text.color
 import androidx.recyclerview.widget.RecyclerView
 
 
-class PrescriptionAdapter :
+class PrescriptionAdapter(private val listener: AddToCartButtonListener) :
     RecyclerView.Adapter<PrescriptionAdapter.BaseViewHolder<Prescription>>() {
 
     private var prescriptions: List<Prescription> = mutableListOf()
@@ -21,7 +23,7 @@ class PrescriptionAdapter :
 
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_prescription, parent, false)
-        return PrescriptionViewHolder(view)
+        return PrescriptionViewHolder(view, listener)
     }
 
     fun setData(newPrescriptions: List<Prescription>) {
@@ -61,7 +63,7 @@ class PrescriptionAdapter :
         abstract fun bind(item: T)
     }
 
-    class PrescriptionViewHolder(itemView: View) :
+    class PrescriptionViewHolder(itemView: View, private val listener: AddToCartButtonListener) :
         BaseViewHolder<Prescription>(itemView) {
 
         private val txtLastFill = itemView.findViewById<TextView>(R.id.prescriptions_last_fill)
@@ -72,17 +74,37 @@ class PrescriptionAdapter :
         private val txtPrescribed = itemView.findViewById<TextView>(R.id.prescriptions_prescribed)
         private val txtFillBy = itemView.findViewById<TextView>(R.id.prescriptions_filled_by)
         private val txtPrice = itemView.findViewById<TextView>(R.id.prescriptions_price)
+        private val btnAddToCart = itemView.findViewById<Button>(R.id.prescriptions_add_to_cart)
 
         override fun bind(item: Prescription) { // update UI
 
-            txtLastFill.text = item.lastfilldate
+            txtLastFill.text =
+                "${itemView.resources.getString(R.string.prescription_list_filled_on)}${item.lastfilldate}"
+
             txtDrugName.text = item.drugname
-            txtDaysSupply.text = item.dayssupply
-            txtMemberName.text = item.memberfirstname
-            txtRemaining.text = item.refillsleft
-            txtPrescribed.text = item.prescriberfirstname
-            txtFillBy.text = item.fulfilledby
+
+            txtDaysSupply.text =
+                "${item.dayssupply}${itemView.resources.getString(R.string.prescription_days_supply)}"
+
+            txtMemberName.text =
+                formatDisplayString(
+                    itemView.resources.getString(R.string.prescription_member),
+                    item.memberfirstname, getColor(itemView.context, R.color.Anatomy_black)
+                )
+
+            txtRemaining.text =
+                "${itemView.resources.getString(R.string.prescription_remaining)}${item.refillsleft}"
+
+            txtPrescribed.text =
+                "${itemView.resources.getString(R.string.prescription_prescribed)}${item.prescriberfirstname}"
+
+            txtFillBy.text =
+                "${itemView.resources.getString(R.string.prescription_filled_by)}${item.fulfilledby}"
+
             txtPrice.text = "$${item.estimatedcost}"
+            btnAddToCart.setOnClickListener {
+                listener.onAddToCartButtonClicked(item)
+            }
         }
     }
 

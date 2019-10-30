@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/prescriptions_refill_card"
     android:background="@color/Anatomy_white"
-    android:layout_marginBottom="16dp"
+    android:layout_marginBottom="@dimen/base_margin"
     android:layout_marginStart="@dimen/base_margin"
     android:layout_marginEnd="@dimen/base_margin"
     android:focusable="true"
@@ -18,27 +18,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingTop="16dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp">
+        android:paddingTop="@dimen/base_margin"
+        android:paddingStart="@dimen/base_margin"
+        android:paddingEnd="@dimen/base_margin">
         <!-- use style : Anatomy.Text.Caption.Deemphasized -->
         <TextView
             android:id="@+id/prescriptions_last_fill"
+            style="@style/Anatomy.Text.Caption.Deemphasized"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
             tools:text="Last filled ABC" />
-        <!-- use style : Anatomy.Text.Title -->
+        <!-- use style : Anatomy.Text.Title and color Anatomy_teal_deep -->
         <TextView
             android:id="@+id/prescriptions_drug_name"
-            android:layout_marginTop="8dp"
+            style="@style/Anatomy.Text.Title"
+            android:layout_marginTop="@dimen/half_base_margin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/Anatomy_teal_deep"
             tools:text="Xanax 30mg Tab ABC" />
 
         <!-- use style : Anatomy.Text.Caption.Deemphasized -->
         <TextView
             android:id="@+id/prescriptions_days_supply"
+            style="@style/Anatomy.Text.Caption.Deemphasized"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -47,7 +51,8 @@
         <!-- use style : Anatomy.Text.Body_2.Deemphasized -->
         <TextView
             android:id="@+id/prescriptions_member_name"
-            android:layout_marginTop="8dp"
+            style="@style/Anatomy.Text.Body_2.Deemphasized"
+            android:layout_marginTop="@dimen/half_base_margin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -55,6 +60,7 @@
         <!-- use style : Anatomy.Text.Body_2.Deemphasized -->
         <TextView
             android:id="@+id/prescriptions_remaining"
+            style="@style/Anatomy.Text.Body_2.Deemphasized"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -63,6 +69,7 @@
         <!-- use style : Anatomy.Text.Body_2.Deemphasized -->
         <TextView
             android:id="@+id/prescriptions_prescribed"
+            style="@style/Anatomy.Text.Body_2.Deemphasized"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -71,31 +78,34 @@
         <!-- use style : Anatomy.Text.Body_2.Deemphasized -->
         <TextView
             android:id="@+id/prescriptions_filled_by"
+            style="@style/Anatomy.Text.Body_2.Deemphasized"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/half_base_margin"
             android:ellipsize="end"
             tools:text="Filled by: ABC" />
 
         <!-- use style : Anatomy.Text.Body_1 -->
         <TextView
             android:id="@+id/prescriptions_price"
+            style="@style/Anatomy.Text.Body_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/half_base_margin"
             android:textSize="18sp"
             android:ellipsize="end"
             tools:text="$333.44" />
 
         <View style="@style/Anatomy.HorizontalRule"/>
 
-        <!-- use style : Anatomy.Button, color : Anatomy_teal_deep , string : prescription_add_to_cart -->
+        <!-- use style : Anatomy.Button, color : Anatomy_white , string : prescription_add_to_cart -->
         <Button
             android:id="@+id/prescriptions_add_to_cart"
+            style="@style/Anatomy.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="AddToCart"
-            android:layout_margin="8dp" />
+            android:text="@string/prescription_add_to_cart"
+            android:layout_margin="@dimen/half_base_margin" />
     
     </LinearLayout>
 

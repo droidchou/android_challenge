@@ -8,7 +8,8 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class PrescriptionActivity : BaseAppCompatActivity() {
+class PrescriptionActivity : BaseAppCompatActivity(), PrescriptionAdapter.AddToCartButtonListener {
+
 
     private lateinit var linearLayoutManager: LinearLayoutManager
     private lateinit var adapter: PrescriptionAdapter
@@ -22,7 +23,7 @@ class PrescriptionActivity : BaseAppCompatActivity() {
         val rv = findViewById<RecyclerView>(R.id.recycler_view)
         linearLayoutManager =
             LinearLayoutManager(this@PrescriptionActivity, RecyclerView.VERTICAL, false)
-        adapter = PrescriptionAdapter()
+        adapter = PrescriptionAdapter(this@PrescriptionActivity)
         rv.layoutManager = linearLayoutManager
         rv.adapter = adapter
 
@@ -43,5 +44,9 @@ class PrescriptionActivity : BaseAppCompatActivity() {
                 //TODO: what we plan to do here if api fail
             }
         })
+    }
+
+    override fun onAddToCartButtonClicked(prescription: Prescription) {
+        Log.d("ButtonClicked", "prescription : --> " + prescription.prescriptionid)
     }
 }
