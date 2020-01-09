@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.text.color
 import androidx.recyclerview.widget.RecyclerView
+import com.aetna.simplemailorder.data.Prescription
 
 
 class PrescriptionAdapter :
