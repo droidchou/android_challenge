@@ -1,4 +1,4 @@
-package com.aetna.simplemailorder;
+package com.aetna.simplemailorder.data;
 
 public class Prescription {
 

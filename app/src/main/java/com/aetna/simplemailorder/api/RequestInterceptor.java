@@ -1,4 +1,4 @@
-package com.aetna.simplemailorder;
+package com.aetna.simplemailorder.api;
 
 import android.content.res.AssetManager;
 
@@ -20,7 +20,7 @@ public class RequestInterceptor implements Interceptor {
 
     private final AssetManager assetManager;
 
-    RequestInterceptor(AssetManager assetManager) {
+    public RequestInterceptor(AssetManager assetManager) {
         this.assetManager = assetManager;
     }
 
