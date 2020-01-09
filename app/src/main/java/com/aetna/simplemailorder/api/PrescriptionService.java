@@ -1,4 +1,6 @@
-package com.aetna.simplemailorder;
+package com.aetna.simplemailorder.api;
+
+import com.aetna.simplemailorder.data.Prescription;
 
 import java.util.List;
 

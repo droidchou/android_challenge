@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.aetna.simplemailorder.data.Prescription
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -30,8 +31,8 @@ class PrescriptionActivity : BaseAppCompatActivity(), PrescriptionAdapter.AddToC
         // mock api response
         service.prescriptions.enqueue(object : Callback<List<Prescription>> {
             override fun onResponse(
-                call: Call<List<Prescription>>,
-                response: Response<List<Prescription>>
+                    call: Call<List<Prescription>>,
+                    response: Response<List<Prescription>>
             ) {
 
                 var listOfPrescriptions = response.body()
